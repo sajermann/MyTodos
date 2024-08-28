@@ -31,7 +31,7 @@ export function Main() {
             className="bg-blue-500 rounded-md p-4 text-white"
             type="submit"
           >
-            Adicionar
+            {translate('ADD')}
           </button>
         </form>
 
@@ -65,7 +65,7 @@ export function Main() {
                     className="bg-red-500 text-white rounded-md p-4"
                     type="button"
                   >
-                    Excluir
+                    {translate('DELETE')}
                   </button>
                 </span>
               </div>

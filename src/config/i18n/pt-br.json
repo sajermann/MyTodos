@@ -1,5 +1,7 @@
 {
   "translations": {
-    "TODOS_TITLE": "Título do Todo"
+    "DELETE": "Excluir",
+    "TODOS_TITLE": "Título do Todo",
+    "ADD": "Adicionar"
   }
 }
