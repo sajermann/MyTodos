@@ -1,11 +1,16 @@
-function App() {
+import { Header } from './components/Header';
+import { Main } from './components/Main';
+import { DarkModeProvider } from './hooks/useDarkMode';
+import { TodosProvider } from './hooks/useTodo';
+import './config/i18n';
 
+export function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      
-    Hello Bruno Sajermanns
-  </h1>
-  )
+    <DarkModeProvider>
+      <TodosProvider>
+        <Header />
+        <Main />
+      </TodosProvider>
+    </DarkModeProvider>
+  );
 }
-
-export default App
