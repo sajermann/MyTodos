@@ -1,13 +1,13 @@
 services:
-  vite-boilerplate:
+  my-todos:
     container_name: MyTodos
     restart: always
     build: .
-    networks:
-      - fast-deploy
+    # networks:
+    #   - fast-deploy
     ports:
     - "8000:80"
-networks:
-  fast-deploy:
-    driver: bridge
-    name: fast-deploy
+# networks:
+#   fast-deploy:
+#     driver: bridge
+#     name: fast-deploy
