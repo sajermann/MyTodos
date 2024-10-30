@@ -3,11 +3,11 @@ services:
     container_name: MyTodos
     restart: always
     build: .
-    # networks:
-    #   - fast-deploy
     ports:
-    - "8000:80"
-# networks:
-#   fast-deploy:
-#     driver: bridge
-#     name: fast-deploy
+      - '8000:80'
+    networks:
+      - fast-deploy
+networks:
+  fast-deploy:
+    driver: bridge
+    name: fast-deploy
